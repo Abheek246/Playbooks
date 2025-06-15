@@ -1,0 +1,9 @@
+--- 
+ hosts : all
+ vars :
+  name : batch-28
+ task : 
+  - 
+   name : ansible variable example
+   debug :
+    msg : "{{name}}"
