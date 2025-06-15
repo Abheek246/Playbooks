@@ -1,5 +1,5 @@
-- hosts: Abheekserver
-   become: true
-   task:
+- hosts: AbheekServer
+  become: true
+  task:
    - name: create file
      file: path=/home/batch-28 state=touch
