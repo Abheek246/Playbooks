@@ -1,0 +1,12 @@
+---
+- hosts: AbheekServer
+  become: true
+  tasks:
+   - name: create multiple directories
+     file: 
+           path: "{{item}}"
+           state: directory
+     with_items:
+        - /home/folder1
+        - /home/folder2
+        - /home/folder3
